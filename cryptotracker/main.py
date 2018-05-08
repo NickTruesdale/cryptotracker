@@ -27,6 +27,9 @@ def main():
 
     binance = Binance(settings.APIKEY, settings.APISECRET)
     binance.connect()
+    binance.get_all_transactions()
+
+    return binance
 
 
 if __name__ == '__main__':
